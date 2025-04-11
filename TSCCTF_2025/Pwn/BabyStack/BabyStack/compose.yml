@@ -1,0 +1,8 @@
+services:
+  pwn-babystack:
+    build: ./
+    volumes:
+      - ./share:/home/chal:ro
+      - ./xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - 36902:36902
